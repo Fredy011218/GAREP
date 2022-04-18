@@ -32,6 +32,9 @@ background-color: var(--info) !important;
 .avatar{
 	 max-width: 35px;
 }
+.avatar2{
+	max-width: 85px;
+}
 
 /*other*/
 
