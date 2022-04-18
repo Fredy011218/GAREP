@@ -171,16 +171,18 @@
   <main class="mt-5 pt-3">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 fw-bold fs-3">Dashboard</div>
+        <div class="col-md-12 fw-bold fs-2">Dashboard</div>
       </div>
       <div class="row">
         <div class="col-md-3">
           <div class="card text-dark  mb-3 h-100" >
-            <div class="card-header">
-              <i class="icon ion-md-videocam">
-                <span>DAHUA </span>
+            <div class="card-header ">
+              <i class="icon ion-md-videocam ">
+                <span>Camaras de Seguridad</span>
                 </div></i>
             <div class="card-body">
+              <img src="../imagenes/dahua.jpg" class="img-fluid rounded-circle mr-2 avatar ">
+              Dahua Technology
               <h5 class="card-title">Notificacion HDCVI</h5>
               <p class="card-text">Actualizacion camaras 5MP Real</p>
               
@@ -191,8 +193,10 @@
         <div class="col-md-3">
           <div class="card text-dark  mb-3 h-100" >
             <div class="card-header"><i class="icon ion-md-cog"></i>
-              <span>PPA</span> </div>
+              <span>Motores para Portones</span> </div>
             <div class="card-body">
+              <img src="../imagenes/ppa.jpg" class="img-fluid rounded-circle mr-2 avatar ">
+              PPA AUTOMATIZACION
               <h5 class="card-title">Motores Batientes</h5>
               <p class="card-text">Triangulacion motores PPA, para el buen funcionamiento</p>
             </div>
@@ -201,8 +205,10 @@
         <div class="col-md-3">
           <div class="card text-dark  mb-3 h-100" >
             <div class="card-header"><i class="icon ion-md-wifi"></i>
-              <span>TP-LINK</span></div>
+              <span>Conectividad</span></div>
             <div class="card-body">
+              <img src="../imagenes/tp-link.png" class="img-fluid rounded-circle mr-2 avatar ">
+              TP-LINK
               <h5 class="card-title">Configuracion Modo AP</h5>
               <p class="card-text">Actualizacion para modo AP en router V2</p>
             </div>
@@ -213,10 +219,12 @@
             <div class="card-header">
               <i class="icon ion-md-card"></i>
               <span>
-                ZKTeco
+                Biometria
               </span>
               </div>
             <div class="card-body">
+              <img src="../imagenes/zkteco.png" class="img-fluid rounded-circle mr-2 avatar ">
+              ZKTeco Co
               <h5 class="card-title">Informacion Facial</h5>
               <p class="card-text">Configuracion facial validacion 5 metros de distancia</p>
             </div>
@@ -230,7 +238,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card mt-2">
-            <div class="card-header">
+            <div class="card-header text-center bg-menu2">
               Equipos Recibidos
             </div>
             <div class="card-body">
@@ -243,6 +251,21 @@
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <div class="card mt-2">
+          <div class="card-header text-center bg-menu">
+            Equipo Reparados
+          </div>
+          <div class="card-body">
+            <div class="card-body">
+              <canvas id="myChart2" onclick="graficaP();" width="400" height="200">
+                
+
+              </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   
 

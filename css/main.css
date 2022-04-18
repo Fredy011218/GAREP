@@ -3,6 +3,8 @@
 	--ligth: #ffffff;
 	--grey: #efefef;
 	--info: #5b8df8;
+	--menu: #6ebeec;
+	--menu2: #406b75;
 	--offcanvas-width: 270px;
  	--topNavbarHeight: 67.5px;
 }
@@ -13,6 +15,12 @@ a {
 .bg-primary{
 	
 	background-color: var(--primary) !important;
+}
+.bg-menu{
+	background-color: var(--menu);
+}
+.bg-menu2{
+	background-color: var(--menu2);
 }
 
 .bg-info{
