@@ -45,7 +45,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Mi perfil</a></li>
-                  <li><a class="dropdown-item" href="#">Cambiar Clave</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="clave();">Cambiar Clave</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
@@ -87,37 +87,37 @@
                     aria-label="Toggle navigation">
                     <span class="bi bi-chevron-down right-icon ms-auto"></span>
                   </button>
-              </a>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown2">
+                  </a>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown2">
 
-                <ul class="navbar-nav ps-3">
-                  <li>
-                    <a href="../vista/registro.html" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-add"></i></span>
-                      <span>Ingreso Equipo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../vista/prueba.html" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-checkmark"></i></span>
-                      <span>Pruebas de equipo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../vista/despacho.html" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-airplane"></i></span>
-                      <span>Despacho equipo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="../vista/cierre.html" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-close"></i></span>
-                      <span>Cierre de caso</span>
-                    </a>
-                  </li>
-                </ul>
+                    <ul class="navbar-nav ps-3">
+                      <li>
+                        <a href="../vista/registro.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-add"></i></span>
+                          <span>Ingreso Equipo</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../vista/prueba.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-checkmark"></i></span>
+                          <span>Pruebas de equipo</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../vista/despacho.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-airplane"></i></span>
+                          <span>Despacho equipo</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../vista/cierre.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-close"></i></span>
+                          <span>Cierre de caso</span>
+                        </a>
+                      </li>
+                    </ul>
 
-              </div>
+                  </div>
             </li>
             <li class="my-4">
               <hr class="dropdown-divider">
@@ -152,7 +152,7 @@
                         <span>Ingreso Laboratorio</span>
                       </a>
                     </li>
-                    
+
                   </ul>
                 </div>
             </div>
@@ -190,7 +190,7 @@
                         <span>Parte Usada</span>
                       </a>
                     </li>
-                  
+
                   </ul>
                 </div>
             </div>
@@ -208,107 +208,330 @@
   <main class="mt-5 pt-3">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 fw-bold fs-2">Panel Principal</div>
+        <div class="col-md-12 fw-bold fs-2">Dashboard</div>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card text-dark  mb-3 h-100">
-            <div class="card-header ">
-              <i class="icon ion-md-videocam">
-                <span class="fw-bold m-lg-2">Camaras de Seguridad</span>
-            </div></i>
-            <div class="card-body">
-              <img src="../imagenes/dahua.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
-              Dahua Technology
-              <h5 class="card-title">Notificacion HDCVI</h5>
-              <p class="card-text">Actualizacion camaras 5MP Real</p>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header ">
+                    <i class="icon ion-md-videocam">
+                      <span class="fw-bold m-lg-2">Camaras de Seguridad</span>
+                  </div></i>
+                  <div class="card-body">
+                    <img src="../imagenes/DAHUAIA.png" class="card-img-top" alt="...">
+                    <br>
 
+                    <h5 class="card-title">Nueva Version IA</h5>
+                    <p class="card-text">Lanzado por Dahua Technology, WizSense es una serie de productos y soluciones
+                      de inteligencia artificial</p>
+                    <a  class="btn btn-primary">MAS INFO </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header ">
+                    <i class="icon ion-md-videocam">
+                      <span class="fw-bold m-lg-2">Camaras de Seguridad</span>
+                  </div></i>
+                  <div class="card-body">
+                    <img src="../imagenes/dahua.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    Dahua Technology
+                    <h5 class="card-title">Notificacion HDCVI</h5>
+                    <p class="card-text">Actualizacion camaras 5MP Real</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header ">
+                    <i class="icon ion-md-videocam">
+                      <span class="fw-bold m-lg-2">Camaras de Seguridad</span>
+                  </div></i>
+                  <div class="card-body">
+                    <img src="../imagenes/dahua.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    Dahua Technology
+                    <h5 class="card-title">Notificacion HDCVI</h5>
+                    <p class="card-text">Actualizacion camaras 5MP Real</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header ">
+                    <i class="icon ion-md-videocam">
+                      <span class="fw-bold m-lg-2">Camaras de Seguridad</span>
+                  </div></i>
+                  <div class="card-body">
+                    <img src="../imagenes/dahua.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    Dahua Technology
+                    <h5 class="card-title">Notificacion HDCVI</h5>
+                    <p class="card-text">Actualizacion camaras 5MP Real</p>
+
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
-        </div>
+          <div class="carousel-item">
+            <div class="row">
 
-        <div class="col-md-3">
-          <div class="card text-dark  mb-3 h-100">
-            <div class="card-header"><i class="icon ion-md-cog"></i>
-              <span class="fw-bold m-lg-2">Motores para Portones</span>
-            </div>
-            <div class="card-body">
-              <img src="../imagenes/ppa.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
-              PPA AUTOMATIZACION
-              <h5 class="card-title">Motores Batientes</h5>
-              <p class="card-text">Triangulacion motores PPA, para el buen funcionamiento</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-dark  mb-3 h-100">
-            <div class="card-header"><i class="icon ion-md-wifi"></i>
-              <span class="fw-bold m-lg-2">Conectividad</span>
-            </div>
-            <div class="card-body">
-              <img src="../imagenes/tp-link.png" class="img-fluid rounded-circle mr-2 avatar2 ">
-              TP-LINK
-              <h5 class="card-title">Configuracion Modo AP</h5>
-              <p class="card-text">Actualizacion para modo AP en router V2</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-dark  mb-3 h-100">
-            <div class="card-header">
-              <i class="icon ion-md-card"></i>
-              <span class="m-lg-2  fw-bold ">
-                Biometria
-              </span>
-            </div>
-            <div class="card-body">
-              <img src="../imagenes/zkteco.png" class="img-fluid rounded-circle mr-2 avatar2 ">
-              ZKTeco Co
-              <h5 class="card-title">Informacion Facial</h5>
-              <p class="card-text">Configuracion facial validacion 5 metros de distancia</p>
-            </div>
-          </div>
-        </div>
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-cog"></i>
+                    <span class="fw-bold m-lg-2">Motores para Portones</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/ppa.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    PPA AUTOMATIZACION
+                    <h5 class="card-title">Motores Batientes</h5>
+                    <p class="card-text">Triangulacion motores PPA, para el buen funcionamiento</p>
+                  </div>
+                </div>
+              </div>
 
 
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-cog"></i>
+                    <span class="fw-bold m-lg-2">Motores para Portones</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/ppa.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    PPA AUTOMATIZACION
+                    <h5 class="card-title">Motores Batientes</h5>
+                    <p class="card-text">Triangulacion motores PPA, para el buen funcionamiento</p>
+                  </div>
+                </div>
+              </div>
 
 
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mt-2">
-            <div class="card-header text-center bg-menu2">
-              Equipos Recibidos
-            </div>
-            <div class="card-body">
-              <div class="card-body">
-                <canvas id="myChart" onclick="graficafinal();" width="400" height="200">
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-cog"></i>
+                    <span class="fw-bold m-lg-2">Motores para Portones</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/ppa.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    PPA AUTOMATIZACION
+                    <h5 class="card-title">Motores Batientes</h5>
+                    <p class="card-text">Triangulacion motores PPA, para el buen funcionamiento</p>
+                  </div>
+                </div>
+              </div>
 
 
-                </canvas>
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-cog"></i>
+                    <span class="fw-bold m-lg-2">Motores para Portones</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/ppa.jpg" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    PPA AUTOMATIZACION
+                    <h5 class="card-title">Motores Batientes</h5>
+                    <p class="card-text">Triangulacion motores PPA, para el buen funcionamiento</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mt-2">
-            <div class="card-header text-center bg-menu">
-              Equipo Reparados
-            </div>
-            <div class="card-body">
-              <div class="card-body">
-                <canvas id="myChart2" onclick="graficaP();" width="400" height="200">
+          <div class="carousel-item">
+            <div class="row">
 
-
-                </canvas>
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-wifi"></i>
+                    <span class="fw-bold m-lg-2">Conectividad</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/tp-link.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    TP-LINK
+                    <h5 class="card-title">Configuracion Modo AP</h5>
+                    <p class="card-text">Actualizacion para modo AP en router V2</p>
+                  </div>
+                </div>
               </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-wifi"></i>
+                    <span class="fw-bold m-lg-2">Conectividad</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/tp-link.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    TP-LINK
+                    <h5 class="card-title">Configuracion Modo AP</h5>
+                    <p class="card-text">Actualizacion para modo AP en router V2</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-wifi"></i>
+                    <span class="fw-bold m-lg-2">Conectividad</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/tp-link.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    TP-LINK
+                    <h5 class="card-title">Configuracion Modo AP</h5>
+                    <p class="card-text">Actualizacion para modo AP en router V2</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header"><i class="icon ion-md-wifi"></i>
+                    <span class="fw-bold m-lg-2">Conectividad</span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/tp-link.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    TP-LINK
+                    <h5 class="card-title">Configuracion Modo AP</h5>
+                    <p class="card-text">Actualizacion para modo AP en router V2</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header">
+                    <i class="icon ion-md-card"></i>
+                    <span class="m-lg-2  fw-bold ">
+                      Biometria
+                    </span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/zkteco.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    ZKTeco Co
+                    <h5 class="card-title">Informacion Facial</h5>
+                    <p class="card-text">Configuracion facial validacion 5 metros de distancia</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header">
+                    <i class="icon ion-md-card"></i>
+                    <span class="m-lg-2  fw-bold ">
+                      Biometria
+                    </span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/zkteco.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    ZKTeco Co
+                    <h5 class="card-title">Informacion Facial</h5>
+                    <p class="card-text">Configuracion facial validacion 5 metros de distancia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header">
+                    <i class="icon ion-md-card"></i>
+                    <span class="m-lg-2  fw-bold ">
+                      Biometria
+                    </span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/zkteco.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    ZKTeco Co
+                    <h5 class="card-title">Informacion Facial</h5>
+                    <p class="card-text">Configuracion facial validacion 5 metros de distancia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card text-dark  mb-3 h-100">
+                  <div class="card-header">
+                    <i class="icon ion-md-card"></i>
+                    <span class="m-lg-2  fw-bold ">
+                      Biometria
+                    </span>
+                  </div>
+                  <div class="card-body">
+                    <img src="../imagenes/zkteco.png" class="img-fluid rounded-circle mr-2 avatar2 ">
+                    ZKTeco Co
+                    <h5 class="card-title">Informacion Facial</h5>
+                    <p class="card-text">Configuracion facial validacion 5 metros de distancia</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mt-2">
+          <div class="card-header text-center bg-menu2">
+            Equipos Recibidos
+          </div>
+          <div class="card-body">
+            <div class="card-body">
+              <canvas id="myChart" onclick="graficafinal();" width="400" height="200">
+
+
+              </canvas>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <div class="card mt-2">
+          <div class="card-header text-center bg-menu">
+            Equipo Reparados
+          </div>
+          <div class="card-body">
+            <div class="card-body">
+              <canvas id="myChart2" onclick="graficaP();" width="400" height="200">
+
+
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </main>
+
   <footer class="mt-5 pt-3">
 
   </footer>

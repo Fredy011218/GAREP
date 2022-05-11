@@ -1,13 +1,21 @@
 
+var lf = '';
+function clave(){
+alert ('En desarrollo')
+
+}
+
 function valor(){
+    
     u = document.getElementById("usuariol").value;
     p = document.getElementById("pss").value;
+   
     
     
 
     if(u =='118921'){
         
-        if(p=='123456'){
+        if(p==lf){
             
               location.href="../GAREP/vista/principal.html";
             
