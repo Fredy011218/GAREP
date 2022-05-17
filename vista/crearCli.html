@@ -45,7 +45,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Mi perfil</a></li>
-                  <li><a class="dropdown-item" href="#">Cambiar Clave</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="clave();">Cambiar Clave</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
@@ -87,37 +87,37 @@
                     aria-label="Toggle navigation">
                     <span class="bi bi-chevron-down right-icon ms-auto"></span>
                   </button>
-              </a>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown2">
+                  </a>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown2">
 
-                <ul class="navbar-nav ps-3">
-                  <li>
-                    <a href="../vista/registro.html" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-add"></i></span>
-                      <span>Ingreso Equipo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-checkmark"></i></span>
-                      <span>Pruebas de equipo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-airplane"></i></span>
-                      <span>Despacho equipo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="nav-link px-3">
-                      <span class="me-2"> <i class="icon ion-md-close"></i></span>
-                      <span>Cierre de caso</span>
-                    </a>
-                  </li>
-                </ul>
+                    <ul class="navbar-nav ps-3">
+                      <li>
+                        <a href="../vista/registro.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-add"></i></span>
+                          <span>Ingreso Equipo</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../vista/prueba.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-checkmark"></i></span>
+                          <span>Pruebas de equipo</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../vista/despacho.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-airplane"></i></span>
+                          <span>Despacho equipo</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../vista/cierre.html" class="nav-link px-3">
+                          <span class="me-2"> <i class="icon ion-md-close"></i></span>
+                          <span>Cierre de caso</span>
+                        </a>
+                      </li>
+                    </ul>
 
-              </div>
+                  </div>
             </li>
             <li class="my-4">
               <hr class="dropdown-divider">
@@ -141,18 +141,18 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="" class="nav-link px-3">
+                      <a href="../vista/cliente.html" class="nav-link px-3">
                         <span class="me-2"> <i class="bi bi-person-lines-fill"></i></span>
                         <span>Cliente</span>
                       </a>
                     </li>
                     <li>
-                      <a href="" class="nav-link px-3">
+                      <a href="../vista/ingresolab.html" class="nav-link px-3">
                         <span class="me-2"> <i class="icon ion-md-lock"></i></span>
                         <span>Ingreso Laboratorio</span>
                       </a>
                     </li>
-                    
+
                   </ul>
                 </div>
             </div>
@@ -185,12 +185,12 @@
                       </a>
                     </li>
                     <li>
-                      <a href="" class="nav-link px-3">
+                      <a href="../vista/parteUsada.html" class="nav-link px-3">
                         <span class="me-2"> <i class="icon ion-md-switch"></i></i></span>
                         <span>Parte Usada</span>
                       </a>
                     </li>
-                  
+
                   </ul>
                 </div>
             </div>
@@ -212,8 +212,14 @@
       </div>
       <div class="row align-items-center">
         <!-- Inicio Contenido de página -->
+        <form action="">
         <div class="mb-3 col-8">
-          <label for="nombreCliente" class="form-label">Nombre cliente</label>
+          <label for="NitCliente" class="form-label">Nit CLiente</label>
+          <input type="number" class="form-control" id="NitCliente" required placeholder="900123123-1">
+        </div>
+
+        <div class="mb-3 col-8">
+          <label for="nombreCliente" class="form-label">Nombre Cliente</label>
           <input type="text" class="form-control" id="nombreCliente" required placeholder="OPERKOM SA">
         </div>
         <div class="mb-3 col-8">
@@ -221,21 +227,21 @@
           <input type="email" class="form-control" id="emailCliente" placeholder="name@example.com" required>
         </div>
         <div class="mb-3 col-8">
-          <label for="Usuario" class="form-label">Crear Usuario</label>
+          <label for="Usuario" class="form-label">Direccion</label>
           <input type="text" class="form-control" id="usuario" placeholder="OPERKOM123" required>
         </div>
         <div class="mb-3 col-8">
-          <label for="Clave" class="form-label">Crear Clave</label>
-          <input type="password" class="form-control" id="clave" required>
+          <label for="Contac" class="form-label">Nombre Contacto</label>
+          <input type="text" class="form-control" id="contac" required placeholder="Pepito Perez">
         </div>
         <div class="mb-3 col-8">
-          <label for="Clave" class="form-label">Confirmar Clave</label>
-          <input type="password" class="form-control" id="clave2" required>
+          <label for="tel" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" id="TEL" required>
         </div>
         <div class="mb-3 col-8">
-          <input type="submit" value="Solicitar Registro">
+          <button type="submit">Registro</button>
         </div>
-
+      </form>
 
 
         <!-- Fin Contenido de página  -->

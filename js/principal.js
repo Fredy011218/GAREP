@@ -75,4 +75,10 @@ function graficaP(){
 
 }
 
+function reca(){
+  location.href="../vista/prueba.html?";
+}
+function aleta(){
+  alert("Recuerde seleccionar minimo dos campos de la lista comprobacion");
+}
 
