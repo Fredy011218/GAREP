@@ -269,11 +269,14 @@
       <div class="row">
 
         <div class="col-md-6">
-          <label for="formFile" class="form-label">Evidencia Funcionamiento</label>
+          <label for="formFile" class="form-label">Foto Funcionamiento</label>
           <input class="form-control" type="file" id="formFile">
         </div>
      
-      
+        <div class="col-md-6">
+          <label for="formFile" class="form-label">Video Funcionamiento</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
 
       </div>
 
@@ -287,7 +290,11 @@
       </div>
 
 
-
+      
+        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+          Enviar Evidencia Cliente
+        </button>
+      
       <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Finalizar Proceso
       </button>
@@ -309,6 +316,31 @@
               <button type="button" class="btn btn-primary" onclick="reca();" data-bs-dismiss="modal">Hecho</button>
               <button type="button" class="btn btn-secondary" onclick="reca();"
                 data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal2-->
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Seleccion de Correo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <select id="inputcorreo" class="form-select">
+                <option selected>garantias@operkom.com</option>
+                <option>gerencia@operkom.com</option>
+                <option>comercial@operkom.com</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="reca2();" data-bs-dismiss="modal">Enviar</button>
+              <button type="button" class="btn btn-secondary" onclick="reca();"
+              data-bs-dismiss="modal">Cancelar</button>
             </div>
           </div>
         </div>

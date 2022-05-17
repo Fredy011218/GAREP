@@ -206,12 +206,14 @@
   </header>
 
 
-  <main class="mt-5 pt-3">
+  <main class="mt-5 pt-3" ">
 
     <form class="row g-3 p-2">
       <div class="col-12">
         <label for="rma" class="form-label">Numero de RMA:</label>
-        <input type="text" class="form-control" id="rma" placeholder="RMA_CO20220516">
+        <p id="rmaid"><input type="rma" class="form-control" id="rmaid" onclick="srma();">
+        </p>
+      </p>
       </div>
 
       <div class="col-md-6">
@@ -227,11 +229,11 @@
         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
       </div>
 
-      <div class="col-md-4">
-        <label for="inputCity" class="form-label">Nombre Envio</label>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Nombre Quien recibe</label>
         <input type="text" class="form-control" id="inputCity">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <label for="inputCiudad" class="form-label">Ciudad</label>
         <select id="inputCity" class="form-select">
           <option selected>Bogota</option>
@@ -317,8 +319,9 @@
         </div>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary" onclick="fecha();">Enviar</button>
       </div>
+     
     </form>
 
   </main>
