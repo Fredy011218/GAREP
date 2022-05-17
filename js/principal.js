@@ -107,13 +107,13 @@ var selected2 = combo.options[combo.selectedIndex].text;
 
 
 function gestionRMA(){
-  const annActual = fechas.getFullYear();
-  const hoy = fechas.getDate();
+const annActual = fechas.getFullYear();
+const hoy = fechas.getDate();
 const mesActual = fechas.getMonth() + 1;
 const hora = currentTime.getHours();
   const min = currentTime.getMinutes();
   alert("Numero de seguimiento es: "+"RMA_CO_"+annActual+""+hoy+""+mesActual+""+hora+""+min);
-  location.href="../vista/registro.html?";
+  
 }
 function srma(){
   const annActual2 = fechas.getFullYear();

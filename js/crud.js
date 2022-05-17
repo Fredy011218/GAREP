@@ -8,6 +8,7 @@ function onSubmit() {
         Vaciar()
     }
 }
+
 function Leer() {
     let DataForm = {}
     DataForm["rma"] = document.getElementById("rma").value
