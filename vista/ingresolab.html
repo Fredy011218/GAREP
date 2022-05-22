@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <script language="JavaScript" type="text/javascript" src="../js/login.js"></script>
-    <script src="../js/principal.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Ingreso Laboratorio</title>
-   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <script language="JavaScript" type="text/javascript" src="../js/login.js"></script>
+ 
+  <script src="../js/inv.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Ingreso Laboratorio</title>
+
 </head>
+
 <body>
-    
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container-fluid">
@@ -204,13 +207,75 @@
     </div>
   </header>
 
-      <main>
+  <main class="mt-5 pt-3">
+    <div class="p-2">
+      <h2><i class="icon ion-md-clipboard"> Ingreso Partes a inventario</i></h2>
+    </div>
 
-        
-      </main>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+    <hr class="dropdown-divider">
+
+
+    <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+      <section>
+   
+        <div class="row p-3">
+          <div class="col-4 d-flex">
+            <label for="Pnin" class="form-label p-2">Parte Numero: </label>
+            <input type="text" class="form-control" id="Pnin" required placeholder="1.1.01.xx.xxx" tabindex="1">
+          </div>
+          <div class="col-4 d-flex">
+            <label for="pnubi" class="form-label p-2">Ubicacion:</label>
+            <input type="number" class="form-control " id="pnubi" required placeholder="1" tabindex="2 ">
+          </div>
+          <div class="col-4 d-flex">
+            <label for="pnqty" class="form-label p-2">Qty:</label>
+            <input type="number" class="form-control " id="pnqty" required placeholder="1" tabindex="3 ">
+          </div>
+  
+  
+        </div>
+  
+        <div class="row p-3">
+  
+          <div class="col-12 d-flex">
+            <label for="pnombre" class="form-label p-2">Nombre:</label>
+            <input type="tex" class="form-control " id="pnombre" required tabindex="4">
+          </div>
+        </div>
+  
+  
+      
+      </section>
+      <hr class="dropdown-divider">
+      <input class="submit" type="submit" value="Agregar"  tabindex="10" onclick="onSubmit2();">
+      <hr class="dropdown-divider">
+      <section>
+        <div class="tablita">
+          <table class="tabla " border="1p"  id="tabla2">
+              <thead>
+                  <tr >
+                      <th class="col-2">Parte Numero</th>
+                      <th class="col-3">Ubicacion</th>
+                      <th class="col-2">Cantidad</th>
+                      <th class="col-5">Nombre</th>
+                      <th class="col-3" >Opciones</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+      </div>
+
+      </section>
+    </form>
+   
+    
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
